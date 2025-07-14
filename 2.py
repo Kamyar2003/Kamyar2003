@@ -34,17 +34,22 @@ def to_1darray(array: list) -> list:
 
 
 # test
+"""
+>>> data = [[1, 2, 3], [4, 5, 6], [[[7, 8], 9]]]
+>>> print(to_1darray(data))
 
-data = [[1, 2, 3], [4, 5, 6], [[[7, 8], 9]]]
-print(to_1darray(data))
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-data = [['A', 'B', 'C'],
+
+>>> data = [['A', 'B', 'C'],
         ['D', 'E', 'F']]
-print(to_1darray(data))
+>>> print(to_1darray(data))
 
-
-
+Output:
+['A', 'B', 'C', 'D', 'E', 'F']
+"""
 
 
 
